@@ -3,7 +3,7 @@ from user import User
 def run_demo():
     people = [User("Andrey", 21), User("Tom", 16), User("Niko", 35)]
 
-    for person in range(len(people)):
+    for person in people:
         if (person.is_adult()):
             person.greet()
 
