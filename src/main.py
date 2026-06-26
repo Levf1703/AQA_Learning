@@ -1,7 +1,11 @@
 from user import User
 
-people = [User("Andrey", 21), User("Tom", 16), User("Niko", 35)]
+def run_demo():
+    people = [User("Andrey", 21), User("Tom", 16), User("Niko", 35)]
 
-for i in range(len(people)):
-    if (people[i].is_adult() == True):
-        people[i].greet()
+    for person in range(len(people)):
+        if (person.is_adult()):
+            person.greet()
+
+if __name__ == "__main__":
+    run_demo()
